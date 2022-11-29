@@ -30,7 +30,7 @@ public class Categoria {
 
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     @JsonManagedReference
-    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "categoria", cascade = CascadeType.PERSIST)
     private List<Produto>  produto;
 
     public static boolean isPresent() {

@@ -43,7 +43,6 @@ public class CategoriaServiceImpl implements CategoriaService {
 
         if(categoriaPesquisado.isPresent()) {
             categoriaPesquisado.get().setNome(categoria.getNome());
-           // BeanUtils.copyProperties(categoria, categoriaPesquisada.get(),"id","status");
             return this.categoriaRepository.save(categoriaPesquisado.get());
         }
         return null;
@@ -73,11 +72,10 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public void excluir(Long id) {
-//        Optional<Produto> categoriaExcluida = this.produtoRepository.findByStatus(produto.getStatus());
-//        if (categoriaExcluida.isPresent() == false) {
-//            throw new EntityNotFoundException("Esta Categoria está em uso e não pode ser deletada!");
-//        }
+        try {
             this.categoriaRepository.deleteById(id);
-
+        } catch( EntityNotFoundException e) {
+            throw new EntityNotFoundException("Esta Categoria não pode ser excluida pois está em uso!");
+        }
     }
 }
