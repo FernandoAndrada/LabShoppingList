@@ -11,7 +11,7 @@ import java.util.Optional;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
-    @Query(value = "SELECT sum(valor) FROM Produto", nativeQuery = true)
+    @Query(value = "SELECT sum(valor) FROM Produto WHERE status=true", nativeQuery = true)
     Float sumValor();
 
     Optional<Produto> findByNome(String nome);
