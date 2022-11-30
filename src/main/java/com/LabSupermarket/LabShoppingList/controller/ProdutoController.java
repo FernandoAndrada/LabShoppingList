@@ -2,6 +2,7 @@ package com.LabSupermarket.LabShoppingList.controller;
 
 import com.LabSupermarket.LabShoppingList.Entity.Produto;
 import com.LabSupermarket.LabShoppingList.Service.Interfaces.ProdutoService;
+import com.LabSupermarket.LabShoppingList.model.ProdutoRepository;
 import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,9 @@ public class ProdutoController {
 
     @Autowired
     private ProdutoService produtoService;
+
+    @Autowired
+    private ProdutoRepository produtoRepository;
 
     @PostMapping
     public ResponseEntity<Produto> salvar(@RequestBody Produto produto) {
@@ -45,9 +49,7 @@ public class ProdutoController {
     }
 
     @GetMapping("/buscar-por-status")
-//    public ResponseEntity<Produto> buscarPorStatus(@PathParam("status") Boolean status){
-//        return ResponseEntity.ok(this.produtoService.buscarPorStatus(status));
-//    }
+
     public List<Produto> busccarPorStatus(@PathParam("status")Boolean status){
 
         return ResponseEntity.ok((this.produtoService.buscarPorStatus(status))).getBody();
@@ -65,6 +67,12 @@ public class ProdutoController {
     public ResponseEntity<String> excluir(@PathVariable Long id) {
         this.produtoService.excluir(id);
         return ResponseEntity.ok("Excluido com sucesso!");
+    }
+
+    @GetMapping("/soma")
+    public Float soma(){
+
+        return ResponseEntity.ok((this.produtoRepository.sumValor())).getBody();
     }
 
 

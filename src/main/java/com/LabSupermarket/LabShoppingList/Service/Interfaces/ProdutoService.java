@@ -21,22 +21,8 @@ public interface ProdutoService {
 
     void excluir(Long id);
 
-    //Produto buscarPorStatus(Boolean status);
 
-
-    //    @Override
-    //    public Produto buscarPorStatus(Boolean status) {
-    //        return this.produtoRepository.findByStatus(status).orElseThrow(() -> {
-    //            throw new EntityNotFoundException("Não foi possível encontrar um produto com o status: " + status);
-    //        });
-    //    }
-
-
-    //    @Override
-    //    public Produto buscarPorStatus(Boolean status) {
-    //        return this.produtoRepository.findByStatus(status).orElseThrow(() -> {
-    //            throw new EntityNotFoundException("Não foi possível encontrar um produto com o status: " + status);
-    //        });
-    //    }
     List<Produto> buscarPorStatus(Boolean status);
+
+    public Float sumValor(Float valor);
 }

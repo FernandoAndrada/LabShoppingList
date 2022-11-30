@@ -67,14 +67,14 @@ public class ProdutoServiceImpl implements ProdutoService {
         this.produtoRepository.deleteById(id);
     }
 
-//    @Override
-//    public Produto buscarPorStatus(Boolean status) {
-//        return this.produtoRepository.findByStatus(status).orElseThrow(() -> {
-//            throw new EntityNotFoundException("Não foi possível encontrar um produto com o status: " + status);
-//        });
-//    }
+
     @Override
     public List<Produto> buscarPorStatus(Boolean status){
         return this.produtoRepository.findByStatus(status);
+        }
+
+    @Override
+    public Float sumValor(Float valor){
+        return produtoRepository.sumValor();
         }
 }
