@@ -1,6 +1,7 @@
 package com.LabSupermarket.LabShoppingList.Service;
 
 
+import com.LabSupermarket.LabShoppingList.Entity.Categoria;
 import com.LabSupermarket.LabShoppingList.Entity.Produto;
 import com.LabSupermarket.LabShoppingList.Service.Interfaces.ProdutoService;
 import com.LabSupermarket.LabShoppingList.model.ProdutoRepository;
@@ -20,10 +21,12 @@ public class ProdutoServiceImpl implements ProdutoService {
 
     @Override
     public Produto salvar(Produto produto) {
-//        boolean isNomeExistente = this.produtoRepository.existsByNome();
-//        if(isNomeExistente){
-//            throw new EntityExistsException("Já existe um Produto com este nome: "+ produto.getNome());
-//       }
+        Optional<Produto> produtoSalva = this.produtoRepository.findByNome(produto.getNome());
+        if(produtoSalva.isPresent()){
+            throw new EntityNotFoundException("Este Produto já existe!");
+        }
+
+
         return this.produtoRepository.save(produto);
     }
 

@@ -72,10 +72,8 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public void excluir(Long id) {
-        try {
+
             this.categoriaRepository.deleteById(id);
-        } catch( EntityNotFoundException e) {
-            throw new EntityNotFoundException("Esta Categoria não pode ser excluida pois está em uso!");
-        }
+
     }
 }
