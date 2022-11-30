@@ -1,11 +1,9 @@
 package com.LabSupermarket.LabShoppingList.Service;
 
 
-import com.LabSupermarket.LabShoppingList.Entity.Categoria;
 import com.LabSupermarket.LabShoppingList.Entity.Produto;
 import com.LabSupermarket.LabShoppingList.Service.Interfaces.ProdutoService;
 import com.LabSupermarket.LabShoppingList.model.ProdutoRepository;
-import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -69,10 +67,14 @@ public class ProdutoServiceImpl implements ProdutoService {
         this.produtoRepository.deleteById(id);
     }
 
+//    @Override
+//    public Produto buscarPorStatus(Boolean status) {
+//        return this.produtoRepository.findByStatus(status).orElseThrow(() -> {
+//            throw new EntityNotFoundException("Não foi possível encontrar um produto com o status: " + status);
+//        });
+//    }
     @Override
-    public Produto buscarPorStatus(Boolean status) {
-        return this.produtoRepository.findByStatus(status).orElseThrow(() -> {
-            throw new EntityNotFoundException("Não foi possível encontrar um produto com o status: " + status);
-        });
-    }
+    public List<Produto> buscarPorStatus(Boolean status){
+        return this.produtoRepository.findByStatus(status);
+        }
 }

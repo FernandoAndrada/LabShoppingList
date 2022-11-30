@@ -45,10 +45,13 @@ public class ProdutoController {
     }
 
     @GetMapping("/buscar-por-status")
-    public ResponseEntity<Produto> buscarPorStatus(@PathParam("nome") Boolean status){
-        return ResponseEntity.ok(this.produtoService.buscarPorStatus(status));
-    }
+//    public ResponseEntity<Produto> buscarPorStatus(@PathParam("status") Boolean status){
+//        return ResponseEntity.ok(this.produtoService.buscarPorStatus(status));
+//    }
+    public List<Produto> busccarPorStatus(@PathParam("status")Boolean status){
 
+        return ResponseEntity.ok((this.produtoService.buscarPorStatus(status))).getBody();
+    }
 
     @GetMapping
     public List<Produto> listar(){
