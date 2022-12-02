@@ -50,8 +50,12 @@ Requisito geral da aplicação:
 ![image](https://user-images.githubusercontent.com/102738744/205294937-cb105386-c987-4152-991a-949d66d4d3e9.png)
 
 
-	Cadastro de categoria:
+*	Cadastro de categoria:
 -	Não permitir cadastro duplicado
+
+![image](https://user-images.githubusercontent.com/102738744/205304206-c1916458-9b3a-44bb-957b-5f5d905bf7a0.png)
+
+
 -	Não permitir cadastro com campos inválidos
 
 Campos necessários:
@@ -66,16 +70,22 @@ Campos necessários:
 ![image](https://user-images.githubusercontent.com/102738744/205295582-b9fc2f26-98b7-447a-8726-d5a34dd72b94.png)
 
 
-	Deleção de categoria:
+-	Deleção de categoria:
 -	Deletar uma categoria por identificador
--	Não permitir deleção caso a categoria esteja em uso
 
-![image](https://user-images.githubusercontent.com/102738744/205295222-455509f2-2b1f-4c5f-8e60-bdb29c554961.png)
+![image](https://user-images.githubusercontent.com/102738744/205307781-30190467-9868-49a5-839e-3dc3e927abf7.png)
+
+
+-	Não permitir deleção caso a categoria esteja em uso
 
 
 
   Cadastro de produto:
 -	Não permitir cadastro duplicado
+
+![image](https://user-images.githubusercontent.com/102738744/205309986-ce4fd5b7-91f5-4228-8489-89e21ba64ece.png)
+
+
 -	Não permitir cadastro com campos inválidos
 
 	Campos necessários:
@@ -86,14 +96,18 @@ Campos necessários:
 *	Valor do produto: Tipo numérico, preenchimento obrigatório
 *	Status do produto: Comprado ou não comprado
 
-	Listagem de produtos:
+-	Listagem de produtos:
   
 -	Listar todos os produtos cadastrados com seus respectivos campos
+
+![image](https://user-images.githubusercontent.com/102738744/205310164-f3ea9578-3719-44f7-87d9-47a242b9bce6.png)
+
+
 
 *	Edição de produto:
 - Editar as informações do produto por identificador
   
-  Deleção de produto:
+* Deleção de produto:
 
 -Deletar um produto por identificador
 
@@ -103,3 +117,6 @@ Campos necessários:
 
 	Documentação de código:
 -	Documentar todos os endpoints criados utilizando Swagger 
+
+![image](https://user-images.githubusercontent.com/102738744/205310369-37f41133-b9b6-4945-b409-b782613488ac.png)
+
