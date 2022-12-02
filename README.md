@@ -138,7 +138,7 @@ Deletar um produto por identificado
 <img src ="https://user-images.githubusercontent.com/102738744/205310369-37f41133-b9b6-4945-b409-b782613488ac.png"  height="450" width="300">
 </div>
 
-## Como utilizar:
+## COMO UTILIZAR:
 
 
 Escolha a Ide de sua preferencia, neste projeto foi utilizado o Intelijji, 'https://www.jetbrains.com/pt-br/idea/' faça um gitclone destes arquivos.
