@@ -4,10 +4,10 @@ package com.LabSupermarket.LabShoppingList.Service;
 import com.LabSupermarket.LabShoppingList.Entity.Produto;
 import com.LabSupermarket.LabShoppingList.Service.Interfaces.ProdutoService;
 import com.LabSupermarket.LabShoppingList.model.ProdutoRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
