@@ -70,8 +70,12 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public void excluir(Long id) {
+        Optional<Categoria> categoria = this.categoriaRepository.findById(id);
+        if (categoria.isPresent()) {
 
             this.categoriaRepository.deleteById(id);
-
+        } else {
+            throw new EntityNotFoundException("Esta Categoria está em uso e não pode ser deletada!");
+        }
     }
 }
