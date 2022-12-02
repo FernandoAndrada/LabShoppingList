@@ -18,7 +18,9 @@ A aplicação que deverá ser realizada individualmente, deve contemplar os segu
 
 2.	Utilização correta do GitHub e escrita do Readme.md
 
-![image](https://user-images.githubusercontent.com/102738744/205294410-d0c0a31d-7fa0-4473-beb2-45d671ee309d.png)
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205294410-d0c0a31d-7fa0-4473-beb2-45d671ee309d.png"  height="125" width="200">
+</div>
 
 
 3.	Cadastro de categoria
@@ -39,22 +41,26 @@ Requisito geral da aplicação:
 - ○	Utilização de Spring: Boot, MVC, Data
 -	Criação de API Rest
 
-![apiLabShoppingList](https://user-images.githubusercontent.com/102738744/205293743-30e29175-44cd-461c-8e2f-d39c67b09090.png)
-
+<div align="center", background-shadow = "0px 0px 30px #737599">
+<img src ="https://user-images.githubusercontent.com/102738744/205293743-30e29175-44cd-461c-8e2f-d39c67b09090.png" align="center" height="350" width="175">
+</div>
 
 -	Utilização de Git com GitHub
+
 -	Uso do banco de dados PostgreSQL
 -	Criação de modelagem do banco de dados com Draw.io, DBDesigner ou ERD Tool do pgAdmin
 -	Criação de documentação com Swagger
 
-![image](https://user-images.githubusercontent.com/102738744/205294937-cb105386-c987-4152-991a-949d66d4d3e9.png)
-
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205294937-cb105386-c987-4152-991a-949d66d4d3e9.png"  height="350" width="190">
+</div>
 
 *	Cadastro de categoria:
 -	Não permitir cadastro duplicado
 
-![image](https://user-images.githubusercontent.com/102738744/205304206-c1916458-9b3a-44bb-957b-5f5d905bf7a0.png)
-
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205304206-c1916458-9b3a-44bb-957b-5f5d905bf7a0.png"  height="350" width="380">
+</div>
 
 -	Não permitir cadastro com campos inválidos
 
@@ -67,14 +73,17 @@ Campos necessários:
 	Listagem de categorias:
 -	Listar todas as categorias cadastradas com seus respectivos campos
 
-![image](https://user-images.githubusercontent.com/102738744/205295582-b9fc2f26-98b7-447a-8726-d5a34dd72b94.png)
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205295582-b9fc2f26-98b7-447a-8726-d5a34dd72b94.png"  height="300" width="200">
+</div>
 
 
 -	Deleção de categoria:
 -	Deletar uma categoria por identificador
 
-![image](https://user-images.githubusercontent.com/102738744/205307781-30190467-9868-49a5-839e-3dc3e927abf7.png)
-
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205307781-30190467-9868-49a5-839e-3dc3e927abf7.png"  height="300" width="380">
+</div>
 
 -	Não permitir deleção caso a categoria esteja em uso
 
@@ -83,7 +92,9 @@ Campos necessários:
   Cadastro de produto:
 -	Não permitir cadastro duplicado
 
-![image](https://user-images.githubusercontent.com/102738744/205309986-ce4fd5b7-91f5-4228-8489-89e21ba64ece.png)
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205310164-f3ea9578-3719-44f7-87d9-47a242b9bce6.png"  height="380" width="380">
+</div>
 
 
 -	Não permitir cadastro com campos inválidos
@@ -96,27 +107,33 @@ Campos necessários:
 *	Valor do produto: Tipo numérico, preenchimento obrigatório
 *	Status do produto: Comprado ou não comprado
 
+
+Listagem de valor total:
+
+
 -	Listagem de produtos:
   
 -	Listar todos os produtos cadastrados com seus respectivos campos
 
-![image](https://user-images.githubusercontent.com/102738744/205310164-f3ea9578-3719-44f7-87d9-47a242b9bce6.png)
-
-
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205310164-f3ea9578-3719-44f7-87d9-47a242b9bce6.png"  height="380" width="380">
+</div>
 
 *	Edição de produto:
 - Editar as informações do produto por identificador
   
 * Deleção de produto:
 
--Deletar um produto por identificador
-
-	Listagem de valor total:
 -	Listar o valor total comprado
 -	Utilizar o status para calcular
+
+
+Deletar um produto por identificado
+
 
 	Documentação de código:
 -	Documentar todos os endpoints criados utilizando Swagger 
 
-![image](https://user-images.githubusercontent.com/102738744/205310369-37f41133-b9b6-4945-b409-b782613488ac.png)
-
+<div align="center">
+<img src ="https://user-images.githubusercontent.com/102738744/205310369-37f41133-b9b6-4945-b409-b782613488ac.png"  height="450" width="300">
+</div>
