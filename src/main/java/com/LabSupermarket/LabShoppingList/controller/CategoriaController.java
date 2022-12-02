@@ -3,12 +3,12 @@ package com.LabSupermarket.LabShoppingList.controller;
 
 import com.LabSupermarket.LabShoppingList.Entity.Categoria;
 import com.LabSupermarket.LabShoppingList.Service.Interfaces.CategoriaService;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
@@ -55,6 +55,7 @@ public class CategoriaController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> excluir(@PathVariable Long id) {
+
         this.categoriaService.excluir(id);
         return ResponseEntity.ok("Excluido com sucesso!");
     }

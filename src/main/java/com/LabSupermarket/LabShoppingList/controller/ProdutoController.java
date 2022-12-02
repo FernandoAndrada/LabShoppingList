@@ -3,12 +3,12 @@ package com.LabSupermarket.LabShoppingList.controller;
 import com.LabSupermarket.LabShoppingList.Entity.Produto;
 import com.LabSupermarket.LabShoppingList.Service.Interfaces.ProdutoService;
 import com.LabSupermarket.LabShoppingList.model.ProdutoRepository;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
