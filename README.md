@@ -12,10 +12,15 @@ A aplicação que deverá ser realizada individualmente, deve contemplar os segu
 
 1.	Criação de modelo relacional
 
-![ModeloRelacionalLabSupermarket](https://user-images.githubusercontent.com/102738744/204414358-10642214-db97-4547-a4f1-95e97ec96fa0.png)
+![image](https://user-images.githubusercontent.com/102738744/205293637-6ebc64a2-a438-474e-b3a1-2c5520677221.png)
+
 
 
 2.	Utilização correta do GitHub e escrita do Readme.md
+
+![image](https://user-images.githubusercontent.com/102738744/205294410-d0c0a31d-7fa0-4473-beb2-45d671ee309d.png)
+
+
 3.	Cadastro de categoria
 4.	Listagem de categorias
 5.	Deleção de categoria
@@ -33,10 +38,17 @@ Requisito geral da aplicação:
 
 - ○	Utilização de Spring: Boot, MVC, Data
 -	Criação de API Rest
+
+![apiLabShoppingList](https://user-images.githubusercontent.com/102738744/205293743-30e29175-44cd-461c-8e2f-d39c67b09090.png)
+
+
 -	Utilização de Git com GitHub
 -	Uso do banco de dados PostgreSQL
 -	Criação de modelagem do banco de dados com Draw.io, DBDesigner ou ERD Tool do pgAdmin
 -	Criação de documentação com Swagger
+
+![image](https://user-images.githubusercontent.com/102738744/205294937-cb105386-c987-4152-991a-949d66d4d3e9.png)
+
 
 	Cadastro de categoria:
 -	Não permitir cadastro duplicado
@@ -51,9 +63,16 @@ Campos necessários:
 	Listagem de categorias:
 -	Listar todas as categorias cadastradas com seus respectivos campos
 
+![image](https://user-images.githubusercontent.com/102738744/205295582-b9fc2f26-98b7-447a-8726-d5a34dd72b94.png)
+
+
 	Deleção de categoria:
 -	Deletar uma categoria por identificador
 -	Não permitir deleção caso a categoria esteja em uso
+
+![image](https://user-images.githubusercontent.com/102738744/205295222-455509f2-2b1f-4c5f-8e60-bdb29c554961.png)
+
+
 
   Cadastro de produto:
 -	Não permitir cadastro duplicado
